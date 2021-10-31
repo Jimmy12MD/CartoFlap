@@ -20,7 +20,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""New action"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""b755ac32-e22b-4e9f-a6b7-f9eea4b0d338"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
@@ -32,7 +32,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""166db4ac-4386-498c-9f9c-d3b4fbf16a10"",
                     ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
+                    ""interactions"": ""Tap"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""New action"",
