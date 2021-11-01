@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace CF.Core
+namespace CF.Movement
 {
     public class PlayerController : MonoBehaviour
     {
@@ -15,13 +15,13 @@ namespace CF.Core
         void Awake()
         {
             rg = GetComponent<Rigidbody2D>();
+           
         }
-
 
         private void CalculateJumpForce()
         {
             Vector2 force = new Vector2(0f, velocity);
-            rg.velocity = new Vector2(0f, 0f);
+            rg.velocity = new Vector2(0f, 0f); //resets velocity for smooth jumping  
             rg.velocity += force;
         }
 
@@ -29,9 +29,9 @@ namespace CF.Core
         //Used in Player Input
         public void Jump(InputAction.CallbackContext context)
         {
+            //Prevents from double jump
             if (context.performed)
             {
-                print("jump!");
                 CalculateJumpForce();
             }     
         }
