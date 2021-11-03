@@ -23,12 +23,12 @@ namespace CF.Movement
         // Update is called once per frame
         void Update()
         {
-            CalculateRotation();
+            SetRotation();
         }
 
 
         //Adjusting the rotation of the bird depending on its speed
-        private void CalculateRotation()
+        private float CalculateRotation()
         {
             if (rg.velocity.normalized.y < 0)
             {
@@ -40,7 +40,12 @@ namespace CF.Movement
                 currentRotation = MaxRotation;
             }
             currentRotation = Mathf.Clamp(currentRotation, MinRotation, MaxRotation);
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, currentRotation);
+            return currentRotation;
+        }
+
+        private void SetRotation()
+        {
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, CalculateRotation());
         }
 
 

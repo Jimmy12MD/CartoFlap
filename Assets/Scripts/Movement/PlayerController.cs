@@ -7,7 +7,7 @@ namespace CF.Movement
 {
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] float velocity = 5f;
+        [SerializeField] float jumpVelocity = 5f;
 
         Rigidbody2D rg;
 
@@ -20,7 +20,7 @@ namespace CF.Movement
 
         private void CalculateJumpForce()
         {
-            Vector2 force = new Vector2(0f, velocity);
+            Vector2 force = new Vector2(0f, jumpVelocity);
             rg.velocity = new Vector2(0f, 0f); //resets velocity for smooth jumping  
             rg.velocity += force;
         }
