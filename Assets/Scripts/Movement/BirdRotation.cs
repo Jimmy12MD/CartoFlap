@@ -14,7 +14,7 @@ namespace CF.Movement
         const float MinRotation = -90f;
         float currentRotation;
 
-        // Start is called before the first frame update
+        // Start is called before the first frame update 
         void Awake()
         {
             rg = GetComponent<Rigidbody2D>();
@@ -24,6 +24,11 @@ namespace CF.Movement
         void Update()
         {
             SetRotation();
+        }
+
+        private void SetRotation()
+        {
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, CalculateRotation());
         }
 
 
@@ -43,10 +48,7 @@ namespace CF.Movement
             return currentRotation;
         }
 
-        private void SetRotation()
-        {
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, CalculateRotation());
-        }
+        
 
 
 
