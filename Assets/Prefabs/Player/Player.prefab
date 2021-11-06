@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6161150651919545483}
   - component: {fileID: 6161150651919545482}
   - component: {fileID: 6161150651919545717}
+  - component: {fileID: 922583809}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +44,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6161150651919545486}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -54,7 +55,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &6161150651919545483
 CircleCollider2D:
@@ -130,6 +131,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba47531ce17552409a482ea9c548ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpVelocity: 3.5
+--- !u!114 &922583809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6161150651919545486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf66f153b1502145b862a777f698fb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationVelocity: 150
 --- !u!1001 &6161150651397610793
 PrefabInstance:
   m_ObjectHideFlags: 0
