@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using CF.Movement;
 
-namespace CF.TeleportTools
+namespace CF.Core
 {
     public class Portal : MonoBehaviour
     {
