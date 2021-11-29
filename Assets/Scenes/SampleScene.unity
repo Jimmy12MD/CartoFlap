@@ -328,6 +328,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!223 &584181412 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6579849608877026634, guid: 1ac5cea0e96199341a4e6e81fe6b8ceb, type: 3}
+  m_PrefabInstance: {fileID: 6579849609565793962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &819449978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6161150651919545486, guid: 01b6c8f5e2c9ea54abd14a5dfae01628, type: 3}
@@ -595,6 +600,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1939147852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6579849610186251588, guid: 1ac5cea0e96199341a4e6e81fe6b8ceb, type: 3}
+  m_PrefabInstance: {fileID: 6579849609565793962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1939147855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939147852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d712e4c68c5e0364aa52d09ab4139868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathCanvas: {fileID: 584181412}
 --- !u!1001 &6161150651555985013
 PrefabInstance:
   m_ObjectHideFlags: 0
