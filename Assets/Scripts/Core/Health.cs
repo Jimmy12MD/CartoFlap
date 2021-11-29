@@ -8,6 +8,11 @@ namespace CF.Core
     {
         bool isAlive = true;
 
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            IsAlive = false;
+            print("I got hit");
+        }
 
         public bool IsAlive
         {
@@ -22,11 +27,6 @@ namespace CF.Core
         }
 
 
-        private void OnCollisionEnter2D(Collision2D collision)
-        {
-            IsAlive = false;
-            print("I got hit");
-        }
     }
 
 }
